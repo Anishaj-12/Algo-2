@@ -1,0 +1,44 @@
+Algo 2
+Sol1:
+
+var sc=0
+var sd=0
+var found=false
+tab1= [3,1,7,9]
+tab2=[2,4,1,9,3]
+found:false
+tab: tab1.concat(tab2)
+For(i=0;i<(tab.length-2);i++) Do
+    Begin
+    For(j=0;j<(tab.length-1);j++) Do
+    Begin
+    If(Tab[i]=Tab[j])
+    Found:=true
+    Break;
+    elseif(i=j)
+          sc=sc+Tab[i]
+Endfor
+If(Found=false)
+sd=sd+Tab[i]
+Endfor
+End
+
+
+Sol2:
+
+
+
+var sc=0
+var sd=0
+var found=false
+for(let i=0;i<tab.length-1;i++) Do
+found=false
+    forlet j=0;j<tab.length;j++) Do
+    if(tab[i]==tab[j] && i!=j)
+    found=true
+    sc=sc+tab[i]
+    Endif
+  If(found=false)
+       sd=sd+tab[i]
+
+End
